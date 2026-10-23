@@ -1,0 +1,51 @@
+
+
+Prompt:
+
+"Please write a Python script for a command-line Todo application. The script should be structured exactly as follows:
+
+1. Imports:
+Include the following import statements at the top:
+
+```python
+import sys
+import database
+import todo
+```
+
+2. Function display_menu():
+Create a function named display_menu that prints a formatted menu to the console. The output should match this exact structure:
+
+```text
+print()
+print("****************************************")
+print("      PYTHON MYSQL TODO MANAGER         ")
+print("****************************************")
+print("1. Add Task")
+print("2. View All Tasks")
+print("3. View Task by ID")
+print("4. Update Task")
+print("5. Mark Task as Completed")
+print("6. Delete Task")
+print("0. Exit")
+print("****************************************")
+```
+
+3. Function check_database_readiness():
+Create a function named check_database_readiness that verifies a database connection.
+
+· It should call a function database.test_connection() and assign the result to is_connected, message.
+· If is_connected is False, print a warning block matching this logic:
+  ```python
+  print("\n[Database Connection Alert]")
+  print(f"Could not connect to MySQL database: {message}")
+  print("\nPlease ensure:")
+  print("1. Your MySQL server service is actively running.")
+  print("2. The 'todo_db' database exists (run 'schema.sql' first).")
+  print("3. Connection settings (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) match your environment.")
+  return False
+  ```
+· If the connection is successful, return True.
+
+4. Function main():
+Begin defining a main function (the image cuts off here, but include def main():)."
